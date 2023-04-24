@@ -1,76 +1,60 @@
-/* Apply a reset to remove default browser styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Set the font and background color for the page */
 body {
-  font-family: 'Helvetica', sans-serif;
-  background-color: #f7f7f7;
-}
-
-/* Create a container for the content with plenty of padding */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 50px;
-}
-
-/* Use a minimalist design with simple typography */
-h1 {
-  font-size: 3em;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 1.5em;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-/* Add some white space between elements */
-h1 + p {
-  margin-top: 40px;
-}
-
-/* Use a grid-based layout for the content */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.col {
-  flex-basis: 48%;
-  margin-bottom: 40px;
-}
-
-/* Use white space as a design element */
-.quote {
-  font-size: 1.2em;
-  font-style: italic;
-  text-align: center;
-  margin-top: 60px;
-  padding: 40px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Use white space to balance text and images */
-.img-container {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.img-container img {
-  max-width: 100%;
-}
-
-.img-container + p {
-  margin-top: 20px;
-}
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #fff;
+    background-color: #333;
+  }
+  
+  #hero {
+    background-image: url('https://source.unsplash.com/random/1600x900');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #hero h1 {
+    font-size: 4em;
+    margin-bottom: 20
