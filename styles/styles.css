@@ -1,137 +1,60 @@
-/* Reset styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Global styles */
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  background-color: #fff;
+  background-image: url("background.jpg");
 }
 
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-/* Header styles */
 header {
-  background-color: #f7f7f7;
-  padding: 20px;
+  background-color: #333;
+  color: white;
 }
 
 nav ul {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
 nav li {
-  margin-left: 20px;
+  float: left;
 }
 
-nav a {
-  font-weight: bold;
-}
-
-/* Hero section styles */
-#hero {
-  background-image: url('/home/buildbot/Downloads/devops.jpeg');
-  background-size: cover;
-  background-position: center center;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
+nav li a {
+  display: block;
+  color: white;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-#hero h1 {
-  font-size: 48px;
-  margin: 0 0 20px;
+nav li a:hover {
+  background-color: #4CAF50;
 }
 
-#hero h2 {
-  font-size: 24px;
-  margin: 0;
-}
-
-/* About section styles */
-#about {
-  background-color: #fff;
+section#hero {
+  background-color: #f2f2f2;
+  text-align: center;
   padding: 50px;
-  text-align: center;
 }
 
-#about h2 {
-  font-size: 36px;
-  margin: 0 0 20px;
-}
-
-/* Skills section styles */
-#skills {
-  background-color: #f7f7f7;
+section#about {
+  background-color: #e6ffe6;
   padding: 50px;
-  text-align: center;
 }
 
-#skills h2 {
-  font-size: 36px;
-  margin: 0 0 20px;
-}
-
-#skills ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-#skills li {
-  margin: 10px;
-  padding: 10px 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* Contact section styles */
-#contact {
-  background-color: #fff;
+section#skills {
+  background-color: #f2f2f2;
   padding: 50px;
-  text-align: center;
 }
 
-#contact h2 {
-  font-size: 36px;
-  margin: 0 0 20px;
+section#contact {
+  background-color: #e6ffe6;
+  padding: 50px;
 }
 
-#contact ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#contact li {
-  margin: 20px 0;
-  font-size: 20px;
-}
-
-/* Footer styles */
 footer {
-  background-color: #f7f7f7;
-  padding: 20px;
+  background-color: #333;
+  color: white;
   text-align: center;
-}
-
-footer p {
-  margin: 0;
+  padding: 10px;
 }
