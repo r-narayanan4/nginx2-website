@@ -1,49 +1,76 @@
-/* Global styles */
+/* Apply a reset to remove default browser styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Set the font and background color for the page */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  font-family: 'Helvetica', sans-serif;
+  background-color: #f7f7f7;
 }
 
+/* Create a container for the content with plenty of padding */
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  padding: 50px;
 }
 
+/* Use a minimalist design with simple typography */
 h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  color: #ff6600;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 p {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 1.5em;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-/* Media queries */
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 10px;
-  }
-  
-  h1 {
-    font-size: 28px;
-  }
-  
-  p {
-    font-size: 16px;
-  }
+/* Add some white space between elements */
+h1 + p {
+  margin-top: 40px;
 }
 
+/* Use a grid-based layout for the content */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 48%;
+  margin-bottom: 40px;
+}
+
+/* Use white space as a design element */
+.quote {
+  font-size: 1.2em;
+  font-style: italic;
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Use white space to balance text and images */
+.img-container {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.img-container img {
+  max-width: 100%;
+}
+
+.img-container + p {
+  margin-top: 20px;
+}
